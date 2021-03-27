@@ -1,0 +1,22 @@
+{
+  "name": "cypress-and-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:chrome": "cypress run --browser chrome",
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berengers/Cypress-and-Github-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berengers/Cypress-and-Github-actions/issues"
+  },
+  "homepage": "https://github.com/berengers/Cypress-and-Github-actions#readme"
+}
