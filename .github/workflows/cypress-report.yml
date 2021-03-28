@@ -14,7 +14,7 @@ jobs:
           npm run build
       - uses: cypress-io/github-action@v2
         with:
-          project: ./client
+          working-directory: client
           browser: chrome
           build: npm run build
           # single start command per line
