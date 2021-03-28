@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/berengers/Cypress-and-Github-actions/issues"
   },
-  "homepage": "https://github.com/berengers/Cypress-and-Github-actions#readme"
+  "homepage": "https://github.com/berengers/Cypress-and-Github-actions#readme",
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
 }
