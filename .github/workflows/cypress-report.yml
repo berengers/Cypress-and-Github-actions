@@ -7,11 +7,6 @@ jobs:
     name: E2E on Chrome
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          pwd
-          cd client
-          npm install
-          npm run build
       - uses: cypress-io/github-action@v2
         with:
           working-directory: client
