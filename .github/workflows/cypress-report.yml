@@ -4,9 +4,10 @@ jobs:
   cypress-run:
     runs-on: ubuntu-16.04
     # let's make sure our tests pass on Chrome browser
-    name: E2E on Chrome
+    name: Cypress tests
     steps:
       - uses: actions/checkout@v2
+      name: Run Cypress tests
       - uses: cypress-io/github-action@v2
         with:
           working-directory: client
