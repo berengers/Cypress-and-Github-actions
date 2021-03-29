@@ -14,4 +14,6 @@ jobs:
           build: npm run build
           # single start command per line
           start: |
+            npm start
             npm run test:e2e
+          wait-on: "http://localhost:3000"
