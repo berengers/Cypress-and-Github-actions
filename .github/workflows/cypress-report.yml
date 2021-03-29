@@ -7,8 +7,8 @@ jobs:
     name: Cypress tests
     steps:
       - uses: actions/checkout@v2
-      name: Run Cypress tests
-      - uses: cypress-io/github-action@v2
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v2
         with:
           working-directory: client
           browser: chrome
